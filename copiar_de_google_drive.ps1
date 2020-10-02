@@ -1,0 +1,1 @@
+Copy-Item -Path "C:\Users\Raul\Google Drive\Proyectos\Portafolio\Sitio\*" -Destination "./" -Recurse -Exclude "*.ps1"
