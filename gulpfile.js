@@ -4,7 +4,7 @@
  */
 
 var settings = {
-	clean: true,
+	clean: false,
 	scripts: true,
 	polyfills: true,
 	styles: true,
@@ -20,9 +20,6 @@ var settings = {
 
 var paths = {
 
-	//Backup
-	backuppath: "../_backup/",
-
 	// Para observar
 	gdpath: '../../Google Drive/Proyectos/Portafolio/Sitio/',
 	localpath: './',
@@ -30,26 +27,27 @@ var paths = {
 	// Para gulp-boilerplate
 	input: 'src/',
 	// input: "../../Google Drive/Proyectos/.../Portafolio/src"
-	// output: '../../Google Drive/Proyectos/Portafolio/Sitio/dist/',
-	output: "dist/",
+	// output: '../../Google Drive/Proyectos/Portafolio/Sitio//',
+	output: "/",
+
 	scripts: {
 		input: 'src/js/*',
 		polyfills: '.polyfill.js',
-		output: 'dist/js/'
+		output: '/js/'
 	},
 	styles: {
 		input: 'src/sass/**/*.{scss,sass}',
-		output: 'dist/css/'
+		output: '/css/'
 	},
 	svgs: {
 		input: 'src/svg/*.svg',
-		output: 'dist/svg/'
+		output: '/svg/'
 	},
 	copy: {
 		input: 'src/copy/**/*',
-		output: 'dist/'
+		output: './'
 	},
-	reload: './dist/'
+	reload: './'
 };
 
 
@@ -112,12 +110,12 @@ const zip = require('gulp-zip');
  */
 
 // Remove pre-existing content from output folders
-var cleanDist = function (done) {
+var clean = function (done) {
 
 	// Make sure this feature is activated before running
 	if (!settings.clean) return done();
 
-	// Clean the dist folder
+	// Clean the  folder
 	del.sync([
 		paths.output
 	]);
@@ -298,7 +296,7 @@ var copy = function (done) {
 // Default task
 // gulp
 exports.default = series(
-	cleanDist,
+	clean,
 	parallel(
 		buildScripts,
 		lintScripts,
@@ -320,7 +318,7 @@ exports.watch = series(
 
 // Limpiar Doogle Drive
 var cleanGD = function (done) {
-	// Clean the dist folder
+	// Clean the  folder
 	del.sync([paths.gdpath], { force: true });
 	done();
 };
@@ -334,14 +332,14 @@ var cleanLocal = function (done) {
 
 // Copiar a Google Drive
 var copyToGD = function (done) {
-	src(["./**", "!node_modules/**", "!dist/**"])
+	src(["./**", "!node_modules/**", "!/**"])
 		.pipe(dest(paths.gdpath))
 	done();
 }
 
 // Copiar a local
 var copyToLocal = function (done) {
-	src([paths.gdpath, "!node_modules/**", "!dist/**"])
+	src([paths.gdpath, "!node_modules/**", "!/**"])
 		.pipe(dest("./**"))
 	done();
 }
