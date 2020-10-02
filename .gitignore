@@ -2,6 +2,10 @@
 ################
 node_modules
 
+# Documentación #
+###################
+src
+
 # Compiled source #
 ###################
 *.com
