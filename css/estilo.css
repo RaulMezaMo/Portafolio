@@ -48,19 +48,19 @@
   src: local("AUTHENTIC Sans 60"), url("fonts/AUTHENTICSans-60.woff") format("woff");
 }
 
-/* line 127, src/sass/estilo.scss */
+/* line 117, src/sass/estilo.scss */
 body {
   font-family: "AUTHENTIC Sans 60";
 }
 
 /*---------------- Links ----------------*/
-/* line 132, src/sass/estilo.scss */
+/* line 122, src/sass/estilo.scss */
 a,
 a.link {
   color: #5060f1;
 }
 
-/* line 137, src/sass/estilo.scss */
+/* line 127, src/sass/estilo.scss */
 a.hiperlink {
   display: inline-block;
   position: relative;
@@ -75,7 +75,7 @@ a.hiperlink {
   /* Estados */
 }
 
-/* line 152, src/sass/estilo.scss */
+/* line 142, src/sass/estilo.scss */
 a.hiperlink::before {
   content: "";
   position: absolute;
@@ -95,46 +95,51 @@ a.hiperlink::before {
   z-index: -1;
 }
 
-/* line 173, src/sass/estilo.scss */
+/* line 163, src/sass/estilo.scss */
 a.hiperlink:hover {
   color: #caf2e4;
   -webkit-transition: color .1s linear .15s;
   transition: color .1s linear .15s;
 }
 
-/* line 177, src/sass/estilo.scss */
+/* line 167, src/sass/estilo.scss */
 a.hiperlink:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-/* line 189, src/sass/estilo.scss */
+/* line 179, src/sass/estilo.scss */
 p,
 h3 {
   margin: 0;
 }
 
-/* line 194, src/sass/estilo.scss */
+/* line 184, src/sass/estilo.scss */
 p,
 span {
   line-height: 1.4em;
 }
 
 /*======================== =ESTRUCTURA ========================*/
-/* line 203, src/sass/estilo.scss */
+/* line 192, src/sass/estilo.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+/* line 196, src/sass/estilo.scss */
 html,
 body {
   min-height: 100%;
 }
 
-/* line 208, src/sass/estilo.scss */
+/* line 201, src/sass/estilo.scss */
 body {
   position: relative;
   min-width: 360px;
   width: auto !important;
 }
 
-/* line 226, src/sass/estilo.scss */
+/* line 219, src/sass/estilo.scss */
 html.no-scroll {
   overflow-y: hidden;
   -webkit-user-select: none;
@@ -151,7 +156,7 @@ html.no-scroll {
 
 /*======================= =BREAKPOINTS ========================*/
 /*======================== =NAVEGACIÓN ========================*/
-/* line 258, src/sass/estilo.scss */
+/* line 251, src/sass/estilo.scss */
 nav#navegacion {
   position: fixed;
   -webkit-box-shadow: 2px 2px 6px -2px #808bf5;
@@ -160,7 +165,7 @@ nav#navegacion {
   /* .//lista */
 }
 
-/* line 264, src/sass/estilo.scss */
+/* line 257, src/sass/estilo.scss */
 nav#navegacion .lista {
   margin: 0;
   padding: 0;
@@ -175,7 +180,7 @@ nav#navegacion .lista {
   /* .//link */
 }
 
-/* line 272, src/sass/estilo.scss */
+/* line 265, src/sass/estilo.scss */
 nav#navegacion .lista li {
   background-color: white;
   margin: 0;
@@ -185,7 +190,7 @@ nav#navegacion .lista li {
   transition: all .3s ease;
 }
 
-/* line 281, src/sass/estilo.scss */
+/* line 274, src/sass/estilo.scss */
 nav#navegacion .lista .link {
   position: relative;
   display: -webkit-box;
@@ -202,14 +207,14 @@ nav#navegacion .lista .link {
   /*---------------- Animaciones ----------------*/
 }
 
-/* line 288, src/sass/estilo.scss */
+/* line 281, src/sass/estilo.scss */
 nav#navegacion .lista .link svg,
 nav#navegacion .lista .link .texto,
 nav#navegacion .lista .link img {
   margin-left: 16px;
 }
 
-/* line 297, src/sass/estilo.scss */
+/* line 290, src/sass/estilo.scss */
 nav#navegacion .lista .link svg {
   -ms-flex-item-align: center;
       align-self: center;
@@ -220,21 +225,21 @@ nav#navegacion .lista .link svg {
   fill: #5060f1;
 }
 
-/* line 306, src/sass/estilo.scss */
+/* line 299, src/sass/estilo.scss */
 nav#navegacion .lista .link svg,
 nav#navegacion .lista .link img {
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
-/* line 311, src/sass/estilo.scss */
+/* line 304, src/sass/estilo.scss */
 nav#navegacion .lista .link img {
   height: 16px;
   position: absolute;
   opacity: 0;
 }
 
-/* line 319, src/sass/estilo.scss */
+/* line 312, src/sass/estilo.scss */
 nav#navegacion .lista .link::before {
   content: "";
   display: block;
@@ -251,26 +256,26 @@ nav#navegacion .lista .link::before {
   transition: width .3s ease, background-color .1s linear .18s;
 }
 
-/* line 342, src/sass/estilo.scss */
+/* line 335, src/sass/estilo.scss */
 nav#navegacion .lista .link .texto-container {
   overflow: hidden;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
 
-/* line 347, src/sass/estilo.scss */
+/* line 340, src/sass/estilo.scss */
 nav#navegacion .lista .link .texto {
   display: none;
   position: relative;
   color: inherit;
 }
 
-/* line 355, src/sass/estilo.scss */
+/* line 348, src/sass/estilo.scss */
 nav#navegacion .lista .link:hover {
   color: white;
 }
 
-/* line 358, src/sass/estilo.scss */
+/* line 351, src/sass/estilo.scss */
 nav#navegacion .lista .link:hover::before {
   background-color: #5060f1;
   width: 152px;
@@ -278,20 +283,20 @@ nav#navegacion .lista .link:hover::before {
   transition: width .3s ease;
 }
 
-/* line 364, src/sass/estilo.scss */
+/* line 357, src/sass/estilo.scss */
 nav#navegacion .lista .link:hover .texto {
   display: inline-block;
   -webkit-animation: slide-up .3s ease-out;
   animation: slide-up .3s ease-out;
 }
 
-/* line 371, src/sass/estilo.scss */
+/* line 364, src/sass/estilo.scss */
 nav#navegacion .lista .link:hover img {
   opacity: 1;
   height: 32px;
 }
 
-/* line 376, src/sass/estilo.scss */
+/* line 369, src/sass/estilo.scss */
 nav#navegacion .lista .link:hover svg {
   opacity: 0;
   max-width: 32px;
@@ -356,13 +361,13 @@ nav#navegacion .lista .link:hover svg {
 
 /* .// Navegación */
 /*-------------- Tamaño pequeño -------------*/
-/* line 452, src/sass/estilo.scss */
+/* line 445, src/sass/estilo.scss */
 #checkbox-nav {
   position: absolute;
   visibility: hidden;
 }
 
-/* line 458, src/sass/estilo.scss */
+/* line 451, src/sass/estilo.scss */
 #toggle-nav {
   position: fixed;
   opacity: 0;
@@ -376,7 +381,7 @@ nav#navegacion .lista .link:hover svg {
   z-index: 500;
 }
 
-/* line 469, src/sass/estilo.scss */
+/* line 462, src/sass/estilo.scss */
 #toggle-nav span {
   display: block;
   width: 80%;
@@ -390,79 +395,79 @@ nav#navegacion .lista .link:hover svg {
   /* easeOutQuad */
 }
 
-/* line 480, src/sass/estilo.scss */
+/* line 473, src/sass/estilo.scss */
 #toggle-nav.show-menu span:first-of-type {
   -webkit-transform: rotate(45deg) translate(13px, 14px);
           transform: rotate(45deg) translate(13px, 14px);
 }
 
-/* line 484, src/sass/estilo.scss */
+/* line 477, src/sass/estilo.scss */
 #toggle-nav.show-menu span:nth-of-type(2) {
   opacity: 0;
 }
 
-/* line 488, src/sass/estilo.scss */
+/* line 481, src/sass/estilo.scss */
 #toggle-nav.show-menu span:last-of-type {
   -webkit-transform: rotate(-45deg) translate(13px, -14px);
           transform: rotate(-45deg) translate(13px, -14px);
 }
 
 @media (max-width: 900px) {
-  /* line 499, src/sass/estilo.scss */
+  /* line 492, src/sass/estilo.scss */
   #navegacion {
     display: none;
   }
-  /* line 504, src/sass/estilo.scss */
+  /* line 497, src/sass/estilo.scss */
   #toggle-nav {
     display: block;
     opacity: 1;
     -webkit-transition: opacity .3s ease .4s;
     transition: opacity .3s ease .4s;
   }
-  /* line 510, src/sass/estilo.scss */
+  /* line 503, src/sass/estilo.scss */
   #checkbox-nav:checked + #navegacion {
     display: block;
     height: 100%;
     width: 100%;
   }
-  /* line 515, src/sass/estilo.scss */
+  /* line 508, src/sass/estilo.scss */
   #checkbox-nav:checked + #navegacion .lista {
     height: 100%;
   }
-  /* line 518, src/sass/estilo.scss */
+  /* line 511, src/sass/estilo.scss */
   #checkbox-nav:checked + #navegacion .lista li {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
     width: 100%;
   }
-  /* line 523, src/sass/estilo.scss */
+  /* line 516, src/sass/estilo.scss */
   #checkbox-nav:checked + #navegacion .lista li:first-child .link::before {
     border-top: none;
   }
-  /* line 529, src/sass/estilo.scss */
+  /* line 522, src/sass/estilo.scss */
   #checkbox-nav:checked + #navegacion .lista li .link {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     /*-------- Estados --------*/
   }
-  /* line 532, src/sass/estilo.scss */
+  /* line 525, src/sass/estilo.scss */
   #checkbox-nav:checked + #navegacion .lista li .link svg {
     max-width: 64px;
     max-height: 64px;
   }
-  /* line 537, src/sass/estilo.scss */
+  /* line 530, src/sass/estilo.scss */
   #checkbox-nav:checked + #navegacion .lista li .link img {
     height: 64px;
     width: 64px;
   }
-  /* line 542, src/sass/estilo.scss */
+  /* line 535, src/sass/estilo.scss */
   #checkbox-nav:checked + #navegacion .lista li .link .texto-container {
     -webkit-transition: none;
     transition: none;
   }
-  /* line 546, src/sass/estilo.scss */
+  /* line 539, src/sass/estilo.scss */
   #checkbox-nav:checked + #navegacion .lista li .link .texto {
     display: inline-block;
     font-size: 2rem;
@@ -472,7 +477,7 @@ nav#navegacion .lista .link:hover svg {
     -webkit-animation: none;
             animation: none;
   }
-  /* line 554, src/sass/estilo.scss */
+  /* line 547, src/sass/estilo.scss */
   #checkbox-nav:checked + #navegacion .lista li .link::before {
     -webkit-transition: none;
     transition: none;
@@ -480,11 +485,11 @@ nav#navegacion .lista .link:hover svg {
     border: none;
     border-top: 1px solid #5060f1;
   }
-  /* line 565, src/sass/estilo.scss */
+  /* line 558, src/sass/estilo.scss */
   #checkbox-nav:checked + #navegacion .lista li .link:hover::before {
     width: initial;
   }
-  /* line 569, src/sass/estilo.scss */
+  /* line 562, src/sass/estilo.scss */
   #checkbox-nav:checked + #navegacion .lista li .link:hover svg {
     opacity: 1;
     fill: #caf2e4;
@@ -494,12 +499,12 @@ nav#navegacion .lista .link:hover svg {
     -webkit-transition: fill .2s ease;
     transition: fill .2s ease;
   }
-  /* line 578, src/sass/estilo.scss */
+  /* line 571, src/sass/estilo.scss */
   #checkbox-nav:checked + #navegacion .lista li .link:hover img {
     opacity: 0;
     height: initial;
   }
-  /* line 583, src/sass/estilo.scss */
+  /* line 576, src/sass/estilo.scss */
   #checkbox-nav:checked + #navegacion .lista li .link:hover .texto {
     -webkit-transition: none;
     transition: none;
@@ -509,7 +514,7 @@ nav#navegacion .lista .link:hover svg {
 }
 
 /*========================== =INICIO ==========================*/
-/* line 610, src/sass/estilo.scss */
+/* line 603, src/sass/estilo.scss */
 #inicio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,25 +536,25 @@ nav#navegacion .lista .link:hover svg {
   /* Separador */
 }
 
-/* line 620, src/sass/estilo.scss */
+/* line 613, src/sass/estilo.scss */
 #inicio .columna {
   width: 50%;
 }
 
 @media (max-width: 900px) {
-  /* line 610, src/sass/estilo.scss */
+  /* line 603, src/sass/estilo.scss */
   #inicio {
     padding: 16px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* line 629, src/sass/estilo.scss */
+  /* line 622, src/sass/estilo.scss */
   #inicio .columna {
     padding: 0;
     width: 100%;
   }
-  /* line 633, src/sass/estilo.scss */
+  /* line 626, src/sass/estilo.scss */
   #inicio .columna .contenido {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -561,7 +566,7 @@ nav#navegacion .lista .link:hover svg {
   }
 }
 
-/* line 643, src/sass/estilo.scss */
+/* line 636, src/sass/estilo.scss */
 #inicio #foto {
   padding-right: 128px;
   padding-top: 64px;
@@ -569,13 +574,13 @@ nav#navegacion .lista .link:hover svg {
   width: 256px;
 }
 
-/* line 649, src/sass/estilo.scss */
+/* line 642, src/sass/estilo.scss */
 #inicio #foto #foto-raul {
   width: 100%;
 }
 
 @media (max-width: 900px) {
-  /* line 643, src/sass/estilo.scss */
+  /* line 636, src/sass/estilo.scss */
   #inicio #foto {
     padding: 0;
     margin: auto;
@@ -584,7 +589,7 @@ nav#navegacion .lista .link:hover svg {
   }
 }
 
-/* line 662, src/sass/estilo.scss */
+/* line 655, src/sass/estilo.scss */
 #inicio #hola-titulo {
   font-size: 10rem;
   font-family: "Authentic Sans 130";
@@ -593,68 +598,68 @@ nav#navegacion .lista .link:hover svg {
   margin: 64px 0 8px 0;
 }
 
-/* line 671, src/sass/estilo.scss */
+/* line 664, src/sass/estilo.scss */
 #inicio #hola-titulo #colores_texto {
   fill: #5060f1;
   pointer-events: none;
 }
 
-/* line 675, src/sass/estilo.scss */
+/* line 668, src/sass/estilo.scss */
 #inicio #hola-titulo #colores_texto .circulos {
   -webkit-box-shadow: 0 0 6px black;
           box-shadow: 0 0 6px black;
 }
 
-/* line 679, src/sass/estilo.scss */
+/* line 672, src/sass/estilo.scss */
 #inicio #hola-titulo #colores_texto :first-child {
   fill: #caf2e4;
   -webkit-animation: circulo-1 2s alternate infinite;
   animation: circulo-1 2s alternate infinite;
 }
 
-/* line 685, src/sass/estilo.scss */
+/* line 678, src/sass/estilo.scss */
 #inicio #hola-titulo #colores_texto :nth-child(2) {
   fill: #f362d4;
   -webkit-animation: circulo-2 2s alternate infinite;
   animation: circulo-2 2s alternate infinite;
 }
 
-/* line 691, src/sass/estilo.scss */
+/* line 684, src/sass/estilo.scss */
 #inicio #hola-titulo #colores_texto :nth-child(3) {
   fill: #5060f1;
   -webkit-animation: circulo-3 2s alternate infinite;
   animation: circulo-3 2s alternate infinite;
 }
 
-/* line 697, src/sass/estilo.scss */
+/* line 690, src/sass/estilo.scss */
 #inicio #hola-titulo #colores_texto :nth-child(4) {
   fill: #f3e562;
   -webkit-animation: circulo-1 2s alternate infinite;
   animation: circulo-1 2s alternate infinite;
 }
 
-/* line 703, src/sass/estilo.scss */
+/* line 696, src/sass/estilo.scss */
 #inicio #hola-titulo #colores_texto :nth-child(5) {
   fill: #caf2e4;
   -webkit-animation: circulo-2 2s alternate infinite;
   animation: circulo-2 2s alternate infinite;
 }
 
-/* line 709, src/sass/estilo.scss */
+/* line 702, src/sass/estilo.scss */
 #inicio #hola-titulo #colores_texto :nth-child(6) {
   fill: #f3e562;
   -webkit-animation: circulo-4 1s alternate infinite;
   animation: circulo-4 1s alternate infinite;
 }
 
-/* line 716, src/sass/estilo.scss */
+/* line 709, src/sass/estilo.scss */
 #inicio #hola-titulo #colores_texto :nth-child(7) {
   fill: #5060f1;
   -webkit-animation: circulo-5 2s alternate infinite;
   animation: circulo-5 2s alternate infinite;
 }
 
-/* line 722, src/sass/estilo.scss */
+/* line 715, src/sass/estilo.scss */
 #inicio #hola-titulo #colores_texto :nth-child(8) {
   fill: #f362d4;
   -webkit-animation: circulo-6 2s alternate infinite;
@@ -663,13 +668,13 @@ nav#navegacion .lista .link:hover svg {
           transform-origin: top center;
 }
 
-/* line 731, src/sass/estilo.scss */
+/* line 724, src/sass/estilo.scss */
 #inicio #hola-titulo .background-titulo {
   fill: #5060f1;
 }
 
 @media (max-width: 900px) {
-  /* line 662, src/sass/estilo.scss */
+  /* line 655, src/sass/estilo.scss */
   #inicio #hola-titulo {
     margin-left: auto;
     margin-right: auto;
@@ -786,7 +791,7 @@ nav#navegacion .lista .link:hover svg {
   }
 }
 
-/* line 822, src/sass/estilo.scss */
+/* line 815, src/sass/estilo.scss */
 #inicio #titulo-info {
   font-size: 1.5rem;
   letter-spacing: .05rem;
@@ -796,14 +801,14 @@ nav#navegacion .lista .link:hover svg {
 }
 
 @media (max-width: 900px) {
-  /* line 822, src/sass/estilo.scss */
+  /* line 815, src/sass/estilo.scss */
   #inicio #titulo-info {
     margin: 0 auto;
     text-align: center;
   }
 }
 
-/* line 836, src/sass/estilo.scss */
+/* line 829, src/sass/estilo.scss */
 #inicio #iconos-informacion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -819,19 +824,19 @@ nav#navegacion .lista .link:hover svg {
   /* .//Elemento */
 }
 
-/* line 850, src/sass/estilo.scss */
+/* line 843, src/sass/estilo.scss */
 #inicio #iconos-informacion .elemento:hover .icono {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-/* line 854, src/sass/estilo.scss */
+/* line 847, src/sass/estilo.scss */
 #inicio #iconos-informacion .elemento:hover p {
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
 }
 
-/* line 859, src/sass/estilo.scss */
+/* line 852, src/sass/estilo.scss */
 #inicio #iconos-informacion .elemento .icono {
   margin: auto;
   display: block;
@@ -842,7 +847,7 @@ nav#navegacion .lista .link:hover svg {
   transition: transform .3s ease, -webkit-transform .3s ease;
 }
 
-/* line 867, src/sass/estilo.scss */
+/* line 860, src/sass/estilo.scss */
 #inicio #iconos-informacion .elemento p {
   color: #666666;
   font-size: 8pt;
@@ -855,14 +860,14 @@ nav#navegacion .lista .link:hover svg {
 }
 
 @media (max-width: 900px) {
-  /* line 836, src/sass/estilo.scss */
+  /* line 829, src/sass/estilo.scss */
   #inicio #iconos-informacion {
     margin: 16px auto;
     padding: 8px;
   }
 }
 
-/* line 888, src/sass/estilo.scss */
+/* line 881, src/sass/estilo.scss */
 #inicio #accion-contactar {
   margin-top: 64px;
   position: relative;
@@ -870,13 +875,13 @@ nav#navegacion .lista .link:hover svg {
 }
 
 @media (max-width: 900px) {
-  /* line 888, src/sass/estilo.scss */
+  /* line 881, src/sass/estilo.scss */
   #inicio #accion-contactar {
     margin: 0 auto;
   }
 }
 
-/* line 900, src/sass/estilo.scss */
+/* line 893, src/sass/estilo.scss */
 #inicio .separador-abajo {
   position: absolute;
   bottom: 16px;
@@ -886,7 +891,7 @@ nav#navegacion .lista .link:hover svg {
   margin-left: -40px;
 }
 
-/* line 908, src/sass/estilo.scss */
+/* line 901, src/sass/estilo.scss */
 #inicio .separador-abajo .link-caret {
   display: inline-block;
   margin: auto;
@@ -899,57 +904,58 @@ nav#navegacion .lista .link:hover svg {
   /* Estados */
 }
 
-/* line 919, src/sass/estilo.scss */
+/* line 912, src/sass/estilo.scss */
 #inicio .separador-abajo .link-caret .caret {
   height: 100%;
   width: 100%;
 }
 
-/* line 927, src/sass/estilo.scss */
+/* line 920, src/sass/estilo.scss */
 #inicio .separador-abajo .link-caret:hover {
   opacity: 1;
 }
 
 /*======================== =SECCIONES =========================*/
-/* line 945, src/sass/estilo.scss */
+/* line 938, src/sass/estilo.scss */
 .pagina {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 128px;
+  margin-top: 64px;
+  padding: 64px 0;
   -webkit-animation: .5s fadein;
           animation: .5s fadein;
   /*---------------- Contenedor Normal ----------------*/
   /*---------------- Página para tamaño celular ----------------*/
 }
 
-/* line 950, src/sass/estilo.scss */
+/* line 944, src/sass/estilo.scss */
 .pagina:last-of-type {
   padding-bottom: 64px;
 }
 
-/* line 954, src/sass/estilo.scss */
+/* line 948, src/sass/estilo.scss */
 .pagina .columna {
   padding: 16px;
 }
 
-/* line 960, src/sass/estilo.scss */
+/* line 954, src/sass/estilo.scss */
 .pagina.full-width {
   display: block;
 }
 
-/* line 963, src/sass/estilo.scss */
+/* line 957, src/sass/estilo.scss */
 .pagina.full-width .contenedor {
   margin: 0;
   padding: 0;
 }
 
-/* line 972, src/sass/estilo.scss */
+/* line 966, src/sass/estilo.scss */
 .pagina.subtitulo-width {
   display: block;
 }
 
-/* line 975, src/sass/estilo.scss */
+/* line 969, src/sass/estilo.scss */
 .pagina.subtitulo-width .contenedor {
   display: block;
   margin-left: 0;
@@ -960,14 +966,14 @@ nav#navegacion .lista .link:hover svg {
 }
 
 @media (max-width: 900px) {
-  /* line 975, src/sass/estilo.scss */
+  /* line 969, src/sass/estilo.scss */
   .pagina.subtitulo-width .contenedor {
     margin-left: 0;
     padding-left: 0;
   }
 }
 
-/* line 991, src/sass/estilo.scss */
+/* line 985, src/sass/estilo.scss */
 .pagina .contenedor {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -985,7 +991,7 @@ nav#navegacion .lista .link:hover svg {
 }
 
 @media (max-width: 900px) {
-  /* line 991, src/sass/estilo.scss */
+  /* line 985, src/sass/estilo.scss */
   .pagina .contenedor {
     padding-left: 16px;
     padding-right: 16px;
@@ -994,14 +1000,14 @@ nav#navegacion .lista .link:hover svg {
 }
 
 @media (max-width: 900px) {
-  /* line 945, src/sass/estilo.scss */
+  /* line 938, src/sass/estilo.scss */
   .pagina {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
   }
-  /* line 1016, src/sass/estilo.scss */
+  /* line 1010, src/sass/estilo.scss */
   .pagina .columna {
     width: 100%;
     display: block;
@@ -1009,7 +1015,7 @@ nav#navegacion .lista .link:hover svg {
 }
 
 /* Subtítulo de secciones */
-/* line 1024, src/sass/estilo.scss */
+/* line 1018, src/sass/estilo.scss */
 .subtitulo-seccion {
   display: inline-block;
   margin: 0 64px;
@@ -1022,13 +1028,13 @@ nav#navegacion .lista .link:hover svg {
 }
 
 @media (max-width: 900px) {
-  /* line 1024, src/sass/estilo.scss */
+  /* line 1018, src/sass/estilo.scss */
   .subtitulo-seccion {
     margin: 0 16px;
   }
 }
 
-/* line 1040, src/sass/estilo.scss */
+/* line 1034, src/sass/estilo.scss */
 .subtitulo-seccion .texto {
   display: inline-block;
   height: 100%;
@@ -1041,7 +1047,7 @@ nav#navegacion .lista .link:hover svg {
   overflow: visible;
 }
 
-/* line 1054, src/sass/estilo.scss */
+/* line 1048, src/sass/estilo.scss */
 .subtitulo-seccion .icono-subtitulo {
   display: inline-block;
   position: absolute;
@@ -1079,12 +1085,12 @@ nav#navegacion .lista .link:hover svg {
 }
 
 /*======================== =PORTAFOLIO ========================*/
-/* line 1103, src/sass/estilo.scss */
+/* line 1097, src/sass/estilo.scss */
 #portafolio {
   /*---------------- Galería de portafolio ----------------*/
 }
 
-/* line 1107, src/sass/estilo.scss */
+/* line 1101, src/sass/estilo.scss */
 #portafolio #galeria-proyectos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1096,7 +1102,7 @@ nav#navegacion .lista .link:hover svg {
   /*-------------- Para celular --------------*/
 }
 
-/* line 1111, src/sass/estilo.scss */
+/* line 1105, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1119,7 +1125,7 @@ nav#navegacion .lista .link:hover svg {
   /*-------------- Sin JavaScript -------------*/
 }
 
-/* line 1120, src/sass/estilo.scss */
+/* line 1114, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .titulo-proyecto {
   position: relative;
   margin-top: 8px;
@@ -1133,7 +1139,7 @@ nav#navegacion .lista .link:hover svg {
   transition: color .3s ease;
 }
 
-/* line 1133, src/sass/estilo.scss */
+/* line 1127, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .titulo-proyecto .texto {
   display: inline-block;
   width: 100%;
@@ -1142,7 +1148,7 @@ nav#navegacion .lista .link:hover svg {
   white-space: nowrap;
 }
 
-/* line 1141, src/sass/estilo.scss */
+/* line 1135, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .titulo-proyecto .globo_texto {
   margin-left: 0;
   margin-right: 0;
@@ -1163,7 +1169,7 @@ nav#navegacion .lista .link:hover svg {
   transition: opacity .2s ease, transform, -webkit-transform;
 }
 
-/* line 1156, src/sass/estilo.scss */
+/* line 1150, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .titulo-proyecto .globo_texto .text-box {
   position: absolute;
   bottom: 0;
@@ -1172,18 +1178,18 @@ nav#navegacion .lista .link:hover svg {
   width: 100%;
 }
 
-/* line 1163, src/sass/estilo.scss */
+/* line 1157, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .titulo-proyecto .globo_texto .text-box .esquina {
   position: absolute;
 }
 
-/* line 1167, src/sass/estilo.scss */
+/* line 1161, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .titulo-proyecto .globo_texto .text-box .esquina-sup-der {
   top: 0;
   right: 0;
 }
 
-/* line 1172, src/sass/estilo.scss */
+/* line 1166, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .titulo-proyecto .globo_texto .text-box .esquina-inf-der {
   bottom: 0;
   right: 0;
@@ -1191,7 +1197,7 @@ nav#navegacion .lista .link:hover svg {
           transform: rotate(90deg);
 }
 
-/* line 1178, src/sass/estilo.scss */
+/* line 1172, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .titulo-proyecto .globo_texto .text-box .esquina-sup-izq {
   top: 0;
   left: 0;
@@ -1199,7 +1205,7 @@ nav#navegacion .lista .link:hover svg {
           transform: rotate(-90deg);
 }
 
-/* line 1184, src/sass/estilo.scss */
+/* line 1178, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .titulo-proyecto .globo_texto .text-box .esquina-inf-izq {
   bottom: 0;
   left: 0;
@@ -1207,7 +1213,7 @@ nav#navegacion .lista .link:hover svg {
           transform: rotate(180deg);
 }
 
-/* line 1190, src/sass/estilo.scss */
+/* line 1184, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .titulo-proyecto .globo_texto .text-box::before {
   content: "";
   top: 0;
@@ -1221,7 +1227,7 @@ nav#navegacion .lista .link:hover svg {
   border-right: 1px solid #5060f1;
 }
 
-/* line 1203, src/sass/estilo.scss */
+/* line 1197, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .titulo-proyecto .globo_texto .text-box::after {
   content: "";
   top: 0;
@@ -1235,7 +1241,7 @@ nav#navegacion .lista .link:hover svg {
   border-bottom: 1px solid #5060f1;
 }
 
-/* line 1219, src/sass/estilo.scss */
+/* line 1213, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .titulo-proyecto .globo_texto .arrow-bottom {
   content: '';
   border: 6px solid transparent;
@@ -1247,7 +1253,7 @@ nav#navegacion .lista .link:hover svg {
   margin-left: -6px;
 }
 
-/* line 1235, src/sass/estilo.scss */
+/* line 1229, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .titulo-proyecto .globo_texto .arrow-bottom:after {
   content: '';
   border: 6px solid transparent;
@@ -1259,7 +1265,7 @@ nav#navegacion .lista .link:hover svg {
   margin-left: -6px;
 }
 
-/* line 1253, src/sass/estilo.scss */
+/* line 1247, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .thumbnail {
   position: relative;
   -webkit-box-flex: 1;
@@ -1270,7 +1276,7 @@ nav#navegacion .lista .link:hover svg {
   /*----------------- Estados --------------------*/
 }
 
-/* line 1260, src/sass/estilo.scss */
+/* line 1254, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .thumbnail .cont-thumbnail {
   overflow: hidden;
   position: relative;
@@ -1285,19 +1291,19 @@ nav#navegacion .lista .link:hover svg {
   transition: transform .2s linear, -webkit-transform .2s linear;
 }
 
-/* line 1271, src/sass/estilo.scss */
+/* line 1265, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .thumbnail .thumbnail-link {
   cursor: pointer;
   display: block;
   height: 100%;
 }
 
-/* line 1278, src/sass/estilo.scss */
+/* line 1272, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .thumbnail .label-thumbnail {
   display: none;
 }
 
-/* line 1285, src/sass/estilo.scss */
+/* line 1279, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .thumbnail .imagen {
   width: 100%;
   height: 100%;
@@ -1305,7 +1311,7 @@ nav#navegacion .lista .link:hover svg {
      object-fit: cover;
 }
 
-/* line 1293, src/sass/estilo.scss */
+/* line 1287, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .thumbnail .fondo-thumbnail {
   position: absolute;
   content: "";
@@ -1340,13 +1346,13 @@ nav#navegacion .lista .link:hover svg {
   }
 }
 
-/* line 1340, src/sass/estilo.scss */
+/* line 1334, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .thumbnail:hover .cont-thumbnail, #portafolio #galeria-proyectos .proyecto .thumbnail:focus .cont-thumbnail {
   -webkit-transform: translate(-8px, -8px);
           transform: translate(-8px, -8px);
 }
 
-/* line 1344, src/sass/estilo.scss */
+/* line 1338, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .thumbnail:hover .fondo-thumbnail, #portafolio #galeria-proyectos .proyecto .thumbnail:focus .fondo-thumbnail {
   opacity: 1;
   -webkit-transition: -webkit-transform .18s linear;
@@ -1355,19 +1361,19 @@ nav#navegacion .lista .link:hover svg {
   transition: transform .18s linear, -webkit-transform .18s linear;
 }
 
-/* line 1349, src/sass/estilo.scss */
+/* line 1343, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .thumbnail:hover::after, #portafolio #galeria-proyectos .proyecto .thumbnail:focus::after {
   opacity: 1;
 }
 
-/* line 1353, src/sass/estilo.scss */
+/* line 1347, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .thumbnail:hover .etiqueta-colab, #portafolio #galeria-proyectos .proyecto .thumbnail:focus .etiqueta-colab {
   opacity: .3;
   -webkit-transform: rotate(-45deg) translate(0px, -60px);
           transform: rotate(-45deg) translate(0px, -60px);
 }
 
-/* line 1357, src/sass/estilo.scss */
+/* line 1351, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .thumbnail:hover .etiqueta-colab .clip, #portafolio #galeria-proyectos .proyecto .thumbnail:focus .etiqueta-colab .clip {
   -webkit-transform: rotate(83deg) translate(26px, 9px);
           transform: rotate(83deg) translate(26px, 9px);
@@ -1377,7 +1383,7 @@ nav#navegacion .lista .link:hover svg {
   transition: transform .3s ease, -webkit-transform .3s ease;
 }
 
-/* line 1363, src/sass/estilo.scss */
+/* line 1357, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto .thumbnail:hover .titulo-proyecto, #portafolio #galeria-proyectos .proyecto .thumbnail:focus .titulo-proyecto {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -1385,7 +1391,7 @@ nav#navegacion .lista .link:hover svg {
   transition: all .3s ease;
 }
 
-/* line 1379, src/sass/estilo.scss */
+/* line 1373, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto.colab .etiqueta-colab {
   position: absolute;
   height: 120px;
@@ -1404,13 +1410,13 @@ nav#navegacion .lista .link:hover svg {
   /* Texto */
 }
 
-/* line 1391, src/sass/estilo.scss */
+/* line 1385, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto.colab .etiqueta-colab .interior {
   margin-top: 50%;
   position: relative;
 }
 
-/* line 1398, src/sass/estilo.scss */
+/* line 1392, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto.colab .etiqueta-colab .fondo {
   position: absolute;
   width: 100%;
@@ -1443,7 +1449,7 @@ nav#navegacion .lista .link:hover svg {
   }
 }
 
-/* line 1424, src/sass/estilo.scss */
+/* line 1418, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto.colab .etiqueta-colab .icono {
   display: block;
   margin: auto;
@@ -1451,25 +1457,25 @@ nav#navegacion .lista .link:hover svg {
   height: auto;
 }
 
-/* line 1432, src/sass/estilo.scss */
+/* line 1426, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto.colab .etiqueta-colab .texto {
   width: auto;
   height: 8px;
 }
 
-/* line 1449, src/sass/estilo.scss */
+/* line 1443, src/sass/estilo.scss */
 #portafolio #galeria-proyectos .proyecto:hover .titulo-proyecto .globo_texto {
   opacity: 1;
   -webkit-animation: stretch-up .6s;
           animation: stretch-up .6s;
 }
 
-/* line 1461, src/sass/estilo.scss */
+/* line 1455, src/sass/estilo.scss */
 html.no-js #portafolio #galeria-proyectos .proyecto .thumbnail .thumbnail-link {
   display: none;
 }
 
-/* line 1465, src/sass/estilo.scss */
+/* line 1459, src/sass/estilo.scss */
 html.no-js #portafolio #galeria-proyectos .proyecto .thumbnail .label-thumbnail {
   display: inline-block;
   cursor: pointer;
@@ -1479,20 +1485,20 @@ html.no-js #portafolio #galeria-proyectos .proyecto .thumbnail .label-thumbnail 
   transition: all .3s ease;
 }
 
-/* line 1473, src/sass/estilo.scss */
+/* line 1467, src/sass/estilo.scss */
 html.no-js #portafolio #galeria-proyectos .proyecto .thumbnail .label-thumbnail img {
   height: auto;
 }
 
 @media (max-width: 900px) {
-  /* line 1107, src/sass/estilo.scss */
+  /* line 1101, src/sass/estilo.scss */
   #portafolio #galeria-proyectos {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  /* line 1489, src/sass/estilo.scss */
+  /* line 1483, src/sass/estilo.scss */
   #portafolio #galeria-proyectos .proyecto {
     padding: 0;
     overflow: visible;
@@ -1501,16 +1507,16 @@ html.no-js #portafolio #galeria-proyectos .proyecto .thumbnail .label-thumbnail 
             flex: 0 1 auto;
     margin: 8px 0;
   }
-  /* line 1495, src/sass/estilo.scss */
+  /* line 1489, src/sass/estilo.scss */
   #portafolio #galeria-proyectos .proyecto .thumbnail {
     /* Estados */
   }
-  /* line 1496, src/sass/estilo.scss */
+  /* line 1490, src/sass/estilo.scss */
   #portafolio #galeria-proyectos .proyecto .thumbnail .cont-thumbnail {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  /* line 1500, src/sass/estilo.scss */
+  /* line 1494, src/sass/estilo.scss */
   #portafolio #galeria-proyectos .proyecto .thumbnail .fondo-thumbnail {
     height: 8px;
     width: 100%;
@@ -1526,12 +1532,12 @@ html.no-js #portafolio #galeria-proyectos .proyecto .thumbnail .label-thumbnail 
     transition: transform .2s linear, opacity .2s linear .5s;
     transition: transform .2s linear, opacity .2s linear .5s, -webkit-transform .2s linear;
   }
-  /* line 1514, src/sass/estilo.scss */
+  /* line 1508, src/sass/estilo.scss */
   #portafolio #galeria-proyectos .proyecto .thumbnail:hover .cont-thumbnail {
     -webkit-transform: translate(0, -8px);
             transform: translate(0, -8px);
   }
-  /* line 1518, src/sass/estilo.scss */
+  /* line 1512, src/sass/estilo.scss */
   #portafolio #galeria-proyectos .proyecto .thumbnail:hover .fondo-thumbnail {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
@@ -1582,29 +1588,29 @@ html.no-js #portafolio #galeria-proyectos .proyecto .thumbnail .label-thumbnail 
 }
 
 /*========================= =ACERCA DE ========================*/
-/* line 1566, src/sass/estilo.scss */
+/* line 1560, src/sass/estilo.scss */
 #acerca-de {
   margin-bottom: 64px;
 }
 
-/* line 1569, src/sass/estilo.scss */
+/* line 1563, src/sass/estilo.scss */
 #acerca-de .fotografia {
   width: 140px;
   height: 140px;
   border-radius: 50%;
 }
 
-/* line 1577, src/sass/estilo.scss */
+/* line 1571, src/sass/estilo.scss */
 #acerca-de .texto {
   max-width: 480px;
 }
 
-/* line 1580, src/sass/estilo.scss */
+/* line 1574, src/sass/estilo.scss */
 #acerca-de .texto p {
   margin-top: 32px;
 }
 
-/* line 1584, src/sass/estilo.scss */
+/* line 1578, src/sass/estilo.scss */
 #acerca-de .texto .label-thumbnail {
   display: inline-block;
   position: absolute;
@@ -1617,7 +1623,7 @@ html.no-js #portafolio #galeria-proyectos .proyecto .thumbnail .label-thumbnail 
   /*----------- Estados ------------*/
 }
 
-/* line 1593, src/sass/estilo.scss */
+/* line 1587, src/sass/estilo.scss */
 #acerca-de .texto .label-thumbnail .icono {
   display: block;
   background-image: url("../img/png/icono-flecha.png");
@@ -1627,21 +1633,21 @@ html.no-js #portafolio #galeria-proyectos .proyecto .thumbnail .label-thumbnail 
   height: 100%;
 }
 
-/* line 1604, src/sass/estilo.scss */
+/* line 1598, src/sass/estilo.scss */
 #acerca-de .texto .label-thumbnail:hover {
   height: 64px;
   width: 9px;
 }
 
 /*========================= =CONTACTO =========================*/
-/* line 1624, src/sass/estilo.scss */
+/* line 1618, src/sass/estilo.scss */
 #contacto {
   position: relative;
   /*---------------- Caritas ----------------*/
   /*---------------- Animaciones ----------------*/
 }
 
-/* line 1627, src/sass/estilo.scss */
+/* line 1621, src/sass/estilo.scss */
 #contacto .contenedor {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1649,7 +1655,7 @@ html.no-js #portafolio #galeria-proyectos .proyecto .thumbnail .label-thumbnail 
           flex-flow: row wrap;
 }
 
-/* line 1631, src/sass/estilo.scss */
+/* line 1625, src/sass/estilo.scss */
 #contacto form {
   -webkit-box-flex: 1;
       -ms-flex: 1 100%;
@@ -1657,7 +1663,7 @@ html.no-js #portafolio #galeria-proyectos .proyecto .thumbnail .label-thumbnail 
 }
 
 @media (max-width: 900px) {
-  /* line 1636, src/sass/estilo.scss */
+  /* line 1630, src/sass/estilo.scss */
   #contacto .contenedor {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1666,12 +1672,12 @@ html.no-js #portafolio #galeria-proyectos .proyecto .thumbnail .label-thumbnail 
   }
 }
 
-/* line 1641, src/sass/estilo.scss */
+/* line 1635, src/sass/estilo.scss */
 #contacto .info {
   display: inline-block;
 }
 
-/* line 1644, src/sass/estilo.scss */
+/* line 1638, src/sass/estilo.scss */
 #contacto .info .dato {
   margin-top: 16px;
   margin-bottom: 16px;
@@ -1679,13 +1685,13 @@ html.no-js #portafolio #galeria-proyectos .proyecto .thumbnail .label-thumbnail 
   font-size: 1.4rem;
 }
 
-/* line 1652, src/sass/estilo.scss */
+/* line 1646, src/sass/estilo.scss */
 #contacto .info .contacto-mensaje {
   color: #666666;
   font-size: .8rem;
 }
 
-/* line 1661, src/sass/estilo.scss */
+/* line 1655, src/sass/estilo.scss */
 #contacto .contacto-caritas {
   position: relative;
   display: inline-block;
@@ -1696,7 +1702,7 @@ html.no-js #portafolio #galeria-proyectos .proyecto .thumbnail .label-thumbnail 
 }
 
 @media (max-width: 900px) {
-  /* line 1661, src/sass/estilo.scss */
+  /* line 1655, src/sass/estilo.scss */
   #contacto .contacto-caritas {
     position: relative;
     -webkit-box-ordinal-group: 0;
@@ -1709,7 +1715,7 @@ html.no-js #portafolio #galeria-proyectos .proyecto .thumbnail .label-thumbnail 
   }
 }
 
-/* line 1680, src/sass/estilo.scss */
+/* line 1674, src/sass/estilo.scss */
 #contacto .contacto-caritas .carita {
   opacity: 0;
   position: absolute;
@@ -1717,19 +1723,19 @@ html.no-js #portafolio #galeria-proyectos .proyecto .thumbnail .label-thumbnail 
           transform-origin: 100% 0;
 }
 
-/* line 1685, src/sass/estilo.scss */
+/* line 1679, src/sass/estilo.scss */
 #contacto .contacto-caritas .carita:first-child {
   -webkit-animation: ciclo1 12s linear infinite;
           animation: ciclo1 12s linear infinite;
 }
 
-/* line 1689, src/sass/estilo.scss */
+/* line 1683, src/sass/estilo.scss */
 #contacto .contacto-caritas .carita:nth-child(2) {
   -webkit-animation: ciclo2 12s linear infinite;
           animation: ciclo2 12s linear infinite;
 }
 
-/* line 1693, src/sass/estilo.scss */
+/* line 1687, src/sass/estilo.scss */
 #contacto .contacto-caritas .carita:nth-child(3) {
   -webkit-animation: ciclo3 12s linear infinite;
           animation: ciclo3 12s linear infinite;
@@ -1994,12 +2000,12 @@ html.no-js #portafolio #galeria-proyectos .proyecto .thumbnail .label-thumbnail 
 }
 
 /*======================== =FORMULARIO ========================*/
-/* line 1882, src/sass/estilo.scss */
+/* line 1876, src/sass/estilo.scss */
 form {
   margin-top: 40px;
 }
 
-/* line 1885, src/sass/estilo.scss */
+/* line 1879, src/sass/estilo.scss */
 form .form-group {
   margin-bottom: 40px;
   position: relative;
@@ -2008,7 +2014,7 @@ form .form-group {
   /*-------------- No JavaScript ---------------*/
 }
 
-/* line 1890, src/sass/estilo.scss */
+/* line 1884, src/sass/estilo.scss */
 form .form-group .etiqueta_nombre {
   position: absolute;
   left: 2px;
@@ -2026,7 +2032,7 @@ form .form-group .etiqueta_nombre {
   transition: transform .2s ease-in, color .2s ease-in, background-color .2s ease, -webkit-transform .2s ease-in;
 }
 
-/* line 1905, src/sass/estilo.scss */
+/* line 1899, src/sass/estilo.scss */
 form .form-group .form-input {
   display: inline;
   padding: 8px;
@@ -2044,14 +2050,14 @@ form .form-group .form-input {
   /*-------------  VALIDACIÓN ---------------*/
 }
 
-/* line 1921, src/sass/estilo.scss */
+/* line 1915, src/sass/estilo.scss */
 form .form-group .form-input:focus {
   outline: 0;
   -webkit-box-shadow: 0 0 6px 2px #caf2e4;
           box-shadow: 0 0 6px 2px #caf2e4;
 }
 
-/* line 1932, src/sass/estilo.scss */
+/* line 1926, src/sass/estilo.scss */
 form .form-group .form-input:not(:-moz-placeholder-shown) + .etiqueta_nombre {
   color: #333333;
   transform: translateY(-20px);
@@ -2066,7 +2072,7 @@ form .form-group .form-input:focus + .etiqueta_nombre, form .form-group .form-in
           transform: translateY(-20px);
 }
 
-/* line 1937, src/sass/estilo.scss */
+/* line 1931, src/sass/estilo.scss */
 form .form-group .form-input:not(:-moz-placeholder-shown)::after {
   opacity: 1;
 }
@@ -2077,12 +2083,12 @@ form .form-group .form-input:focus::after, form .form-group .form-input:not(:pla
   opacity: 1;
 }
 
-/* line 1947, src/sass/estilo.scss */
+/* line 1941, src/sass/estilo.scss */
 form .form-group .form-input.error {
   border-color: #ff5722;
 }
 
-/* line 1956, src/sass/estilo.scss */
+/* line 1950, src/sass/estilo.scss */
 form .form-group .error_cont {
   color: #ff5722;
   position: absolute;
@@ -2091,20 +2097,20 @@ form .form-group .error_cont {
   transition: opacity .3s ease;
 }
 
-/* line 1966, src/sass/estilo.scss */
+/* line 1960, src/sass/estilo.scss */
 form .form-group .error_cont .error {
   font-size: .7rem;
   -webkit-animation: .3s fadein;
           animation: .3s fadein;
 }
 
-/* line 1975, src/sass/estilo.scss */
+/* line 1969, src/sass/estilo.scss */
 form .form-group textarea.form-input {
   resize: vertical;
   min-height: 96px;
 }
 
-/* line 1984, src/sass/estilo.scss */
+/* line 1978, src/sass/estilo.scss */
 form .form-group:after {
   content: "";
   display: inline-block;
@@ -2114,7 +2120,7 @@ form .form-group:after {
   /* Align the element at the bottom   */
 }
 
-/* line 1997, src/sass/estilo.scss */
+/* line 1991, src/sass/estilo.scss */
 html.no-js form .form-group .etiqueta_nombre {
   top: -24px;
   left: 0;
@@ -2122,7 +2128,7 @@ html.no-js form .form-group .etiqueta_nombre {
   color: #333333;
 }
 
-/* line 2011, src/sass/estilo.scss */
+/* line 2005, src/sass/estilo.scss */
 html.no-js form .form-group .form-input:not(:-moz-placeholder-shown) + .etiqueta_nombre {
   color: #333333;
   transform: initial;
@@ -2137,7 +2143,7 @@ html.no-js form .form-group .form-input:focus + .etiqueta_nombre, html.no-js for
           transform: initial;
 }
 
-/* line 2016, src/sass/estilo.scss */
+/* line 2010, src/sass/estilo.scss */
 html.no-js form .form-group .form-input:not(:-moz-placeholder-shown)::after {
   opacity: 1;
 }
@@ -2149,7 +2155,7 @@ html.no-js form .form-group .form-input:focus::after, html.no-js form .form-grou
 }
 
 /*========================== =FOOTER =========================*/
-/* line 2037, src/sass/estilo.scss */
+/* line 2031, src/sass/estilo.scss */
 footer {
   padding: 16px 64px;
   color: #5060f1;
@@ -2159,13 +2165,13 @@ footer {
   font-family: "Authentic Sans 130";
 }
 
-/* line 2046, src/sass/estilo.scss */
+/* line 2040, src/sass/estilo.scss */
 footer .texto {
   opacity: .5;
   pointer-events: none;
 }
 
-/* line 2052, src/sass/estilo.scss */
+/* line 2046, src/sass/estilo.scss */
 footer .redes-sociales a {
   display: inline-block;
   padding: 8px;
@@ -2174,19 +2180,19 @@ footer .redes-sociales a {
   opacity: .4;
 }
 
-/* line 2059, src/sass/estilo.scss */
+/* line 2053, src/sass/estilo.scss */
 footer .redes-sociales a:hover {
   opacity: .5;
 }
 
-/* line 2064, src/sass/estilo.scss */
+/* line 2058, src/sass/estilo.scss */
 footer .redes-sociales .icono {
   width: 16px;
   height: auto;
 }
 
 /*========================== =OVERLAY =========================*/
-/* line 2076, src/sass/estilo.scss */
+/* line 2070, src/sass/estilo.scss */
 .modal__overlay {
   position: fixed;
   top: 0;
@@ -2206,7 +2212,7 @@ footer .redes-sociales .icono {
   z-index: 1000;
 }
 
-/* line 2089, src/sass/estilo.scss */
+/* line 2083, src/sass/estilo.scss */
 .modal__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2233,7 +2239,7 @@ footer .redes-sociales .icono {
   /*-- Descripción --*/
 }
 
-/* line 2105, src/sass/estilo.scss */
+/* line 2099, src/sass/estilo.scss */
 .modal__container .modal__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2251,7 +2257,7 @@ footer .redes-sociales .icono {
   /* Icono cerrar */
 }
 
-/* line 2113, src/sass/estilo.scss */
+/* line 2107, src/sass/estilo.scss */
 .modal__container .modal__header .modal__title {
   font-family: "Authentic Sans 90";
   font-size: 1rem;
@@ -2259,19 +2265,19 @@ footer .redes-sociales .icono {
 }
 
 @media (max-width: 900px) {
-  /* line 2113, src/sass/estilo.scss */
+  /* line 2107, src/sass/estilo.scss */
   .modal__container .modal__header .modal__title {
     font-size: 1.1rem;
   }
 }
 
-/* line 2124, src/sass/estilo.scss */
+/* line 2118, src/sass/estilo.scss */
 .modal__container .modal__header label.cerrar-modal {
   display: none;
   visibility: hidden;
 }
 
-/* line 2129, src/sass/estilo.scss */
+/* line 2123, src/sass/estilo.scss */
 .modal__container .modal__header .cerrar-modal {
   cursor: pointer;
   -webkit-box-flex: 0;
@@ -2298,19 +2304,19 @@ footer .redes-sociales .icono {
 }
 
 @media (max-width: 900px) {
-  /* line 2129, src/sass/estilo.scss */
+  /* line 2123, src/sass/estilo.scss */
   .modal__container .modal__header .cerrar-modal {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
 }
 
-/* line 2154, src/sass/estilo.scss */
+/* line 2148, src/sass/estilo.scss */
 .modal__container .modal__header .cerrar-modal:hover {
   opacity: 1;
 }
 
-/* line 2170, src/sass/estilo.scss */
+/* line 2164, src/sass/estilo.scss */
 .modal__container .contenedor-caret {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2331,7 +2337,7 @@ footer .redes-sociales .icono {
   transition: all .3s ease;
 }
 
-/* line 2188, src/sass/estilo.scss */
+/* line 2182, src/sass/estilo.scss */
 .modal__container .caret {
   position: absolute;
   bottom: 0;
@@ -2349,18 +2355,18 @@ footer .redes-sociales .icono {
   /* Estados */
 }
 
-/* line 2206, src/sass/estilo.scss */
+/* line 2200, src/sass/estilo.scss */
 .modal__container .caret.left {
   left: -64px;
 }
 
-/* line 2210, src/sass/estilo.scss */
+/* line 2204, src/sass/estilo.scss */
 .modal__container .caret.right {
   border-radius: 0 8px 8px 0;
   right: -64px;
 }
 
-/* line 2216, src/sass/estilo.scss */
+/* line 2210, src/sass/estilo.scss */
 .modal__container .caret img {
   display: block;
   margin: auto;
@@ -2376,89 +2382,89 @@ footer .redes-sociales .icono {
           user-select: none;
 }
 
-/* line 218, src/sass/estilo.scss */
+/* line 211, src/sass/estilo.scss */
 html.no-js .modal__container .caret {
   background-color: transparent;
   opacity: .3;
 }
 
-/* line 2230, src/sass/estilo.scss */
+/* line 2224, src/sass/estilo.scss */
 html.no-js .modal__container .caret img {
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 2235, src/sass/estilo.scss */
+/* line 2229, src/sass/estilo.scss */
 html.no-js .modal__container .caret:hover {
   opacity: .6;
 }
 
-/* line 2245, src/sass/estilo.scss */
+/* line 2239, src/sass/estilo.scss */
 .modal__container .caret:hover img {
   -webkit-transform: translateX(-4px);
           transform: translateX(-4px);
 }
 
-/* line 2249, src/sass/estilo.scss */
+/* line 2243, src/sass/estilo.scss */
 .modal__container .caret:hover.right img {
   -webkit-transform: translateX(4px);
           transform: translateX(4px);
 }
 
-/* line 2255, src/sass/estilo.scss */
+/* line 2249, src/sass/estilo.scss */
 .modal__container .caret:active img {
   -webkit-transform: translateX(-8px);
           transform: translateX(-8px);
 }
 
-/* line 2259, src/sass/estilo.scss */
+/* line 2253, src/sass/estilo.scss */
 .modal__container .caret:active.right img {
   -webkit-transform: translateX(8px);
           transform: translateX(8px);
 }
 
-/* line 2270, src/sass/estilo.scss */
+/* line 2264, src/sass/estilo.scss */
 .modal__container .descripcion {
   padding: 16px;
 }
 
 /*------------------ Tamaño pequeño ----------------*/
 @media (max-width: 900px) {
-  /* line 2282, src/sass/estilo.scss */
+  /* line 2276, src/sass/estilo.scss */
   .modal__overlay .modal__container {
     width: 94%;
     height: 94%;
     max-width: 100%;
     max-height: 100%;
   }
-  /* line 2289, src/sass/estilo.scss */
+  /* line 2283, src/sass/estilo.scss */
   .modal__overlay .modal__container .contenedor-caret {
     pointer-events: none;
     z-index: calc(1000 + 10);
   }
-  /* line 2295, src/sass/estilo.scss */
+  /* line 2289, src/sass/estilo.scss */
   .modal__overlay .modal__container .caret {
     border-radius: 8px;
     opacity: .6;
     background-color: rgba(255, 255, 255, 0.3);
     /*------- Estados --------*/
   }
-  /* line 2300, src/sass/estilo.scss */
+  /* line 2294, src/sass/estilo.scss */
   .modal__overlay .modal__container .caret.left {
     left: 0;
   }
-  /* line 2304, src/sass/estilo.scss */
+  /* line 2298, src/sass/estilo.scss */
   .modal__overlay .modal__container .caret.right {
     right: 0;
   }
-  /* line 2310, src/sass/estilo.scss */
+  /* line 2304, src/sass/estilo.scss */
   .modal__overlay .modal__container .caret:hover, .modal__overlay .modal__container .caret:active {
     opacity: 1;
   }
 }
 
 /* Etiqueta con aviso de click en zoom */
-/* line 2332, src/sass/estilo.scss */
+/* line 2326, src/sass/estilo.scss */
 .aviso-zoom {
   position: absolute;
   top: 0;
@@ -2484,7 +2490,7 @@ html.no-js .modal__container .caret:hover {
   /*--------- Tamaño Pequeño --------*/
 }
 
-/* line 2350, src/sass/estilo.scss */
+/* line 2344, src/sass/estilo.scss */
 .aviso-zoom .puntero {
   margin: 0 8px;
   background-image: url("../svg/puntero.svg");
@@ -2500,14 +2506,14 @@ html.no-js .modal__container .caret:hover {
           perspective: 6000px;
 }
 
-/* line 2365, src/sass/estilo.scss */
+/* line 2359, src/sass/estilo.scss */
 .aviso-zoom .ripple {
   position: absolute;
   top: 30px;
   left: 24px;
 }
 
-/* line 2370, src/sass/estilo.scss */
+/* line 2364, src/sass/estilo.scss */
 .aviso-zoom .ripple .circulo {
   display: inline-block;
   position: absolute;
@@ -2523,7 +2529,7 @@ html.no-js .modal__container .caret:hover {
           animation: infinite ripple 4s;
 }
 
-/* line 2384, src/sass/estilo.scss */
+/* line 2378, src/sass/estilo.scss */
 .aviso-zoom .ripple .circulo2 {
   -webkit-animation-delay: .1s;
           animation-delay: .1s;
@@ -2531,14 +2537,14 @@ html.no-js .modal__container .caret:hover {
   height: 8px;
 }
 
-/* line 2397, src/sass/estilo.scss */
+/* line 2391, src/sass/estilo.scss */
 .aviso-zoom .sparks {
   position: absolute;
   top: 26px;
   left: 6px;
 }
 
-/* line 2402, src/sass/estilo.scss */
+/* line 2396, src/sass/estilo.scss */
 .aviso-zoom .sparks .sparks1,
 .aviso-zoom .sparks .sparks2 {
   display: inline-block;
@@ -2551,7 +2557,7 @@ html.no-js .modal__container .caret:hover {
           animation: infinite sparks 4s .3s;
 }
 
-/* line 2414, src/sass/estilo.scss */
+/* line 2408, src/sass/estilo.scss */
 .aviso-zoom .sparks .sparks1 {
   margin-bottom: 4px;
   margin-right: 24px;
@@ -2559,20 +2565,20 @@ html.no-js .modal__container .caret:hover {
           animation-delay: .1s;
 }
 
-/* line 2424, src/sass/estilo.scss */
+/* line 2418, src/sass/estilo.scss */
 .aviso-zoom * {
   pointer-events: none;
 }
 
 @media (max-width: 900px) {
-  /* line 2332, src/sass/estilo.scss */
+  /* line 2326, src/sass/estilo.scss */
   .aviso-zoom {
     -webkit-animation: fadein .3s;
             animation: fadein .3s;
   }
 }
 
-/* line 2442, src/sass/estilo.scss */
+/* line 2436, src/sass/estilo.scss */
 .modal__btn {
   font-size: .875rem;
   padding-left: 1rem;
@@ -2602,14 +2608,14 @@ html.no-js .modal__container .caret:hover {
   transition: transform .25s ease-out, -webkit-transform .25s ease-out;
 }
 
-/* line 2470, src/sass/estilo.scss */
+/* line 2464, src/sass/estilo.scss */
 .modal__btn:focus,
 .modal__btn:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 
-/* line 2476, src/sass/estilo.scss */
+/* line 2470, src/sass/estilo.scss */
 .modal__btn-primary {
   background-color: #00449e;
   color: #fff;
@@ -2697,60 +2703,60 @@ html.no-js .modal__container .caret:hover {
   }
 }
 
-/* line 2526, src/sass/estilo.scss */
+/* line 2520, src/sass/estilo.scss */
 .micromodal-slide {
   display: none;
 }
 
-/* line 2530, src/sass/estilo.scss */
+/* line 2524, src/sass/estilo.scss */
 .micromodal-slide.is-open {
   display: block;
 }
 
-/* line 2534, src/sass/estilo.scss */
+/* line 2528, src/sass/estilo.scss */
 .micromodal-slide[aria-hidden="false"] .modal__overlay {
   -webkit-animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
           animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-/* line 2538, src/sass/estilo.scss */
+/* line 2532, src/sass/estilo.scss */
 .micromodal-slide[aria-hidden="false"] .modal__container {
   -webkit-animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
           animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-/* line 2542, src/sass/estilo.scss */
+/* line 2536, src/sass/estilo.scss */
 .micromodal-slide[aria-hidden="true"] .modal__overlay {
   -webkit-animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
           animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-/* line 2546, src/sass/estilo.scss */
+/* line 2540, src/sass/estilo.scss */
 .micromodal-slide[aria-hidden="true"] .modal__container {
   -webkit-animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
           animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-/* line 2550, src/sass/estilo.scss */
+/* line 2544, src/sass/estilo.scss */
 .micromodal-slide .modal__container,
 .micromodal-slide .modal__overlay {
   will-change: transform;
 }
 
 /*---------------- checkbox hack ----------------*/
-/* line 2558, src/sass/estilo.scss */
+/* line 2552, src/sass/estilo.scss */
 .toggle-checkbox {
   opacity: 0;
   position: absolute;
   left: -100%;
 }
 
-/* line 218, src/sass/estilo.scss */
+/* line 211, src/sass/estilo.scss */
 html.no-js {
   /*---------------- checkbox hack ----------------*/
 }
 
-/* line 2568, src/sass/estilo.scss */
+/* line 2562, src/sass/estilo.scss */
 html.no-js .toggle-checkbox:checked ~ .modal {
   display: block;
   visibility: visible;
@@ -2758,7 +2764,7 @@ html.no-js .toggle-checkbox:checked ~ .modal {
 }
 
 /*---------------- Overlays para portafolios ----------------*/
-/* line 2579, src/sass/estilo.scss */
+/* line 2573, src/sass/estilo.scss */
 .modal__overlay {
   background: repeating-linear-gradient(-55deg, rgba(8, 16, 94, 0.7), rgba(8, 16, 94, 0.7) 12px, rgba(15, 33, 189, 0.7) 12px, rgba(15, 33, 189, 0.7) 14px);
   pointer-events: auto;
@@ -2771,19 +2777,19 @@ html.no-js .toggle-checkbox:checked ~ .modal {
   /*------ Información ---------*/
 }
 
-/* line 2590, src/sass/estilo.scss */
+/* line 2584, src/sass/estilo.scss */
 .modal__overlay.is-hidden {
   visibility: hidden;
   opacity: 0;
 }
 
-/* line 2595, src/sass/estilo.scss */
+/* line 2589, src/sass/estilo.scss */
 .modal__overlay.is-visible {
   visibility: visible;
   opacity: 1;
 }
 
-/* line 2601, src/sass/estilo.scss */
+/* line 2595, src/sass/estilo.scss */
 .modal__overlay .modal__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2798,13 +2804,13 @@ html.no-js .toggle-checkbox:checked ~ .modal {
   height: 100%;
 }
 
-/* line 2611, src/sass/estilo.scss */
+/* line 2605, src/sass/estilo.scss */
 html.no-js .modal__overlay button.modal__close {
   visibility: hidden;
   display: none;
 }
 
-/* line 2623, src/sass/estilo.scss */
+/* line 2617, src/sass/estilo.scss */
 .modal__overlay .imagen-grande {
   position: relative;
   -ms-flex-item-align: center;
@@ -2812,12 +2818,12 @@ html.no-js .modal__overlay button.modal__close {
   /* Sin JavaScript */
 }
 
-/* line 218, src/sass/estilo.scss */
+/* line 211, src/sass/estilo.scss */
 html.no-js .modal__overlay .imagen-grande {
   max-width: 1000px;
 }
 
-/* line 2632, src/sass/estilo.scss */
+/* line 2626, src/sass/estilo.scss */
 .modal__overlay .imagen-grande .contenedor-zoom {
   margin: auto;
   display: -webkit-box;
@@ -2837,37 +2843,37 @@ html.no-js .modal__overlay .imagen-grande {
   /*------ Estados -------*/
 }
 
-/* line 2647, src/sass/estilo.scss */
+/* line 2641, src/sass/estilo.scss */
 .modal__overlay .imagen-grande .contenedor-zoom:hover .aviso-zoom {
   opacity: .5;
 }
 
-/* line 2656, src/sass/estilo.scss */
+/* line 2650, src/sass/estilo.scss */
 .modal__overlay .imagen-grande .zoom {
   min-width: 100%;
   width: 100%;
   height: 100%;
 }
 
-/* line 2664, src/sass/estilo.scss */
+/* line 2658, src/sass/estilo.scss */
 .modal__overlay .imagen-grande .zoom img {
   width: 100%;
   height: 100%;
   display: block;
 }
 
-/* line 2678, src/sass/estilo.scss */
+/* line 2672, src/sass/estilo.scss */
 html.no-js .modal__overlay .imagen-grande .contenedor-caret {
   opacity: 0;
 }
 
-/* line 2683, src/sass/estilo.scss */
+/* line 2677, src/sass/estilo.scss */
 html.no-js .modal__overlay .imagen-grande .contenedor-zoom {
   overflow-y: hidden;
   overflow-x: auto;
 }
 
-/* line 2695, src/sass/estilo.scss */
+/* line 2689, src/sass/estilo.scss */
 .modal__overlay .lista-thumbnails {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2886,29 +2892,29 @@ html.no-js .modal__overlay .imagen-grande .contenedor-zoom {
   list-style: none;
 }
 
-/* line 2704, src/sass/estilo.scss */
+/* line 2698, src/sass/estilo.scss */
 .modal__overlay .lista-thumbnails .miniatura {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-/* line 2708, src/sass/estilo.scss */
+/* line 2702, src/sass/estilo.scss */
 .modal__overlay .lista-thumbnails a {
   display: block;
 }
 
-/* line 2712, src/sass/estilo.scss */
+/* line 2706, src/sass/estilo.scss */
 .modal__overlay .lista-thumbnails img {
   width: 100%;
 }
 
-/* line 2720, src/sass/estilo.scss */
+/* line 2714, src/sass/estilo.scss */
 .modal__overlay .informacion {
   font-size: .9rem;
 }
 
-/* line 2723, src/sass/estilo.scss */
+/* line 2717, src/sass/estilo.scss */
 .modal__overlay .informacion .sector {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2919,26 +2925,26 @@ html.no-js .modal__overlay .imagen-grande .contenedor-zoom {
           flex-flow: row;
 }
 
-/* line 2727, src/sass/estilo.scss */
+/* line 2721, src/sass/estilo.scss */
 .modal__overlay .informacion .sector .titulo {
   color: #5060f1;
   font-family: "Authentic Sans 130";
   margin-right: 8px;
 }
 
-/* line 2733, src/sass/estilo.scss */
+/* line 2727, src/sass/estilo.scss */
 .modal__overlay .informacion .sector .texto {
   padding-left: 8px;
   border-left: 2px solid #f362d4;
 }
 
 /*---------------------- Fancybox ------------------------*/
-/* line 2745, src/sass/estilo.scss */
+/* line 2739, src/sass/estilo.scss */
 .fancybox-bg {
   background-color: #5060f1;
 }
 
-/* line 2750, src/sass/estilo.scss */
+/* line 2744, src/sass/estilo.scss */
 .fancybox-button {
   height: 60px;
   width: 60px;
@@ -2949,14 +2955,14 @@ html.no-js .modal__overlay .imagen-grande .contenedor-zoom {
   color: white;
 }
 
-/* line 2758, src/sass/estilo.scss */
+/* line 2752, src/sass/estilo.scss */
 .fancybox-button:hover {
   opacity: 1;
 }
 
 /*========================== =BOTONES =========================*/
 /*---------------- Botones General ----------------*/
-/* line 2768, src/sass/estilo.scss */
+/* line 2762, src/sass/estilo.scss */
 .boton {
   display: inline-block;
   position: relative;
@@ -2967,7 +2973,7 @@ html.no-js .modal__overlay .imagen-grande .contenedor-zoom {
 
 /* .// botones general */
 /*---------------- Boton Primario ----------------*/
-/* line 2780, src/sass/estilo.scss */
+/* line 2774, src/sass/estilo.scss */
 .boton-primario {
   display: inline-block;
   padding: 16px;
@@ -2986,7 +2992,7 @@ html.no-js .modal__overlay .imagen-grande .contenedor-zoom {
   /*------------ Estados ------------*/
 }
 
-/* line 2796, src/sass/estilo.scss */
+/* line 2790, src/sass/estilo.scss */
 .boton-primario::after {
   content: "";
   position: absolute;
@@ -3002,12 +3008,12 @@ html.no-js .modal__overlay .imagen-grande .contenedor-zoom {
   transition: opacity .3s ease-out;
 }
 
-/* line 2831, src/sass/estilo.scss */
+/* line 2825, src/sass/estilo.scss */
 .boton-primario:hover::after {
   opacity: 1;
 }
 
-/* line 2839, src/sass/estilo.scss */
+/* line 2833, src/sass/estilo.scss */
 .boton-primario:active {
   -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), inset 0 -4px 4px rgba(202, 242, 228, 0.2);
           box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), inset 0 -4px 4px rgba(202, 242, 228, 0.2);
@@ -3015,14 +3021,14 @@ html.no-js .modal__overlay .imagen-grande .contenedor-zoom {
 
 /* .//boton primario */
 /*---------------- Formulario ----------------*/
-/* line 2852, src/sass/estilo.scss */
+/* line 2846, src/sass/estilo.scss */
 form #enviar {
   display: block;
   margin-top: 16px;
 }
 
 /*======================== =ESTADOS =======================*/
-/* line 2864, src/sass/estilo.scss */
+/* line 2858, src/sass/estilo.scss */
 a,
 .boton,
 .proyecto .label-thumbnail,
@@ -3031,7 +3037,7 @@ button {
   transition: outline-offset .3s ease-out;
 }
 
-/* line 2870, src/sass/estilo.scss */
+/* line 2864, src/sass/estilo.scss */
 a:focus,
 .boton:focus,
 .proyecto .label-thumbnail:focus,
@@ -3043,7 +3049,7 @@ button:focus {
 /*======================== =ANIMACIONES =======================*/
 /* Quitar animaciones para la opción de reducir movimiento */
 @media screen and (prefers-reduced-motion: reduce), (update: slow) {
-  /* line 2883, src/sass/estilo.scss */
+  /* line 2877, src/sass/estilo.scss */
   * {
     -webkit-animation-duration: 0.001ms !important;
     animation-duration: 0.001ms !important;

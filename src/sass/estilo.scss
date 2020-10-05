@@ -189,6 +189,9 @@ span {
 //===============================================================
 /*======================== =ESTRUCTURA ========================*/
 //===============================================================
+html {
+  scroll-behavior: smooth;
+}
 
 html,
 body {
@@ -934,7 +937,8 @@ nav#navegacion {
 // Páginas (Secciones de la página)
 .pagina {
   display: flex;
-  margin-top: $space-xl;
+  margin-top: $space-lg;
+  padding: $space-lg 0;
   animation: .5s fadein;
 
   &:last-of-type {
