@@ -40,7 +40,7 @@ habilitarJs();
 //===============================================================
 
 $(document).ready(function () {
-  console.log("--jQuery activo--");
+  console.log("--jQuery activo y document ready--");
 
 /*-------------- Navegación --------------*/
   $toggle_nav = $("#toggle-nav");

@@ -33,7 +33,7 @@ var paths = {
 	scripts: {
 		input: 'src/js/*',
 		polyfills: '.polyfill.js',
-		output: '/js/'
+		output: 'js'
 	},
 	styles: {
 		input: 'src/sass/**/*.{scss,sass}',

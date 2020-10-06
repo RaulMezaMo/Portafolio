@@ -99,19 +99,19 @@ $max-width-contenedor: 900px;
 @font-face {
   font-family: "AUTHENTIC Sans 130";
   src: local("AUTHENTIC Sans 130"),
-    url("fonts/AUTHENTICSans-130.woff") format("woff");
+    url("../fonts/AUTHENTICSans-130.woff") format("woff");
 }
 
 @font-face {
   font-family: "Authentic Sans 90";
   src: local("AUTHENTIC Sans 90"),
-    url("fonts/AUTHENTICSans-90.woff") format("woff");
+    url("../fonts/AUTHENTICSans-90.woff") format("woff");
 }
 
 @font-face {
   font-family: "Authentic Sans 60";
   src: local("AUTHENTIC Sans 60"),
-    url("fonts/AUTHENTICSans-60.woff") format("woff");
+    url("../fonts/AUTHENTICSans-60.woff") format("woff");
 }
 
 body {
@@ -668,10 +668,12 @@ nav#navegacion {
 
   /* Foto Raúl */
   #foto {
-    padding-right: $space-xl;
-    padding-top: $space-lg;
+    // padding-right: $space-xl;
+    // padding-top: $space-lg;
+    margin-top: $space-lg;
     text-align: right;
-    width: $space-xxl;
+    width: 128px;
+    height: 128px;
     // display: none;
     // visibility: none;
     // opacity: 0;
@@ -697,6 +699,12 @@ nav#navegacion {
     // max-width: 200px;
     margin: $space-lg 0 $space-sm 0;
     // padding-top: $space-lg;
+    animation: .3s 1 fadein;
+
+    svg {
+      width: 390px;
+      height: 160px;
+    }
 
     #colores_texto {
       fill: $primario;
