@@ -291,6 +291,8 @@ nav#navegacion {
         align-self: center;
         max-width: 16px;
         max-height: 16px;
+        width: 16px;
+        height: 16px;
         flex-shrink: 0; // El svg se encoje a 0 si esto se quita por el flexbox
 
         fill: $primario;
@@ -333,14 +335,17 @@ nav#navegacion {
 
       /*---------------- Texto ----------------*/
       .texto-container {
+        padding: 4px;
         overflow: hidden;
         flex-shrink: 0;
+        font-family: "Authentic Sans 90";
       }
 
       .texto {
         display: none;
         position: relative;
         color: inherit;
+        margin-left: 24px;
       }
 
       /*---------------- Estados ----------------*/
@@ -605,10 +610,38 @@ nav#navegacion {
   flex-wrap: wrap;
   position: relative;
 
-  max-width: $max-width-contenedor;
+  // max-width: $max-width-contenedor;
   min-height: 100vh;
-  margin: auto;
+  margin: 0;
   padding: 0;
+
+  .contenedor {
+    flex-direction: row;
+  }
+
+  /* Efecto frosted-glass */
+  .frosted_glass {
+
+    &::before {
+      content: "";
+      background-image: url("../img/fotografias/fondo_inicio.jpg");
+      background-size: cover;
+      background-position-x: center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      box-shadow: inset 0 -20px 30px white, inset 0 0 400px white;
+      filter: blur(80px);
+
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // .-efecto frosted glass
 
   .columna {
     width: 50%;
@@ -638,6 +671,9 @@ nav#navegacion {
     padding-top: $space-lg;
     text-align: right;
     width: $space-xxl;
+    // display: none;
+    // visibility: none;
+    // opacity: 0;
 
     #foto-raul {
       width: 100%;

@@ -43,6 +43,7 @@ var paths = {
 		input: 'src/svg/*.svg',
 		output: '/svg/'
 	},
+	imgs: "img",
 	copy: {
 		input: 'src/copy/**/*',
 		output: './'
@@ -117,7 +118,9 @@ var clean = function (done) {
 
 	// Clean the  folder
 	del.sync([
-		paths.output
+		// paths.output
+		paths.imgs,
+		paths.svgs.output
 	]);
 
 	// Signal completion
