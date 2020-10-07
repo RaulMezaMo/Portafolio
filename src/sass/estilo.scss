@@ -470,7 +470,8 @@ nav#navegacion {
     height: 3px;
     margin: 16px auto;
     background: $rosado;
-    transition: transform .3s cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+    transition: transform .3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    /* easeOutQuad */
   }
 
   &.show-menu {
@@ -618,6 +619,7 @@ nav#navegacion {
   .contenedor {
     flex-direction: row;
     align-items: flex-start;
+    padding: 0;
   }
 
   /* Efecto frosted-glass */
@@ -671,6 +673,8 @@ nav#navegacion {
     // padding-right: $space-xl;
     // padding-top: $space-lg;
     margin-top: $space-lg;
+    margin-left: auto;
+    margin-right: auto;
     text-align: right;
     width: 128px;
     height: 128px;
@@ -692,7 +696,7 @@ nav#navegacion {
 
   /* Hola Título */
   #hola-titulo {
-    font-size: 10rem;
+    font-size: 9rem;
     font-family: "Authentic Sans 130";
     width: 390px;
     height: 160px;
@@ -702,8 +706,8 @@ nav#navegacion {
     animation: .3s 1 fadein;
 
     svg {
-      width: 390px;
-      height: 160px;
+      // width: 390px;
+      // height: 160px;
     }
 
     #colores_texto {
@@ -771,8 +775,10 @@ nav#navegacion {
     }
 
     @include small-to-medium {
-      margin-left: auto;
-      margin-right: auto;
+      // margin-left: auto;
+      // margin-right: auto;
+      margin: 0 auto;
+      width: 300px;
     }
 
   }
