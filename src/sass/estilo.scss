@@ -162,6 +162,7 @@ a.hiperlink {
   // Hover
   &:hover {
     color: $olas;
+    text-shadow: none;
     transition: color .1s linear .15s;
 
     &::before {
@@ -191,6 +192,7 @@ span {
 //===============================================================
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 html,
@@ -241,6 +243,12 @@ html.no-scroll {
 
 @mixin small-to-medium {
   @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin extra-large {
+  @media (min-width: 1600px) {
     @content;
   }
 }
@@ -510,7 +518,7 @@ nav#navegacion {
     border: 1px solid $primario;
     transform: translateX(-100%);
     transition: transform 0s ease,
-    opacity .2s ease 1s;
+      opacity .2s ease 1s;
 
     .lista {
       height: 100%;
@@ -632,32 +640,82 @@ nav#navegacion {
   margin: 0;
   padding: 0;
 
+  // fondo fotografía
   .contenedor {
     flex-direction: row;
     align-items: flex-start;
     padding: 0;
+    z-index: $i-base;
   }
 
   /* Efecto frosted-glass */
   .frosted_glass {
+    content: "";
+    position: absolute;
+    width: calc(100% + #{$space-med});
+    height: calc(100% + #{$space-med});
+    top: 0;
+    left: -$space-med;
 
-    &::before {
-      content: "";
-      background-image: url("../img/fotografias/fondo_inicio.jpg");
-      background-size: cover;
-      background-position-x: center;
-      position: absolute;
+    .fotoRaul {
+      margin: auto;
       width: 100%;
       height: 100%;
-      box-shadow: inset 0 -20px 30px white, inset 0 0 400px white;
-      filter: blur(80px);
+      // max-width: 1400px;
 
+       background-image: url("../img/fotografias/fondo_inicio.png");
+       background-size: 100%;
+       background-repeat: no-repeat;
+       background-position: top;
+       box-shadow: inset 0 0 50px 56px #fff;
     }
 
-    img {
+    .fondo {
+      background-image: url("../img/fotografias/fondo_inicio.png");
+      background-repeat: no-repeat;
+      background-size: contain;
       width: 100%;
-      height: 100%;
-    }
+      object-fit: contain;
+      }
+// .fondo {
+//   content: "";
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+//   top: 0;
+//   background-image: url("../img/fotografias/fondo_inicio.jpg");
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   filter: blur(30px);
+//   opacity: .4;
+//   z-index: -1;
+// }
+
+// .fotoRaul {
+//   $width: 300px;
+//   $position: 300px;
+//   width: 100%;
+//   height: 100%;
+//   background-attachment: fixed;
+//   background-size: contain;
+//   // background-image: url("../img/fotografias/fondo_inicio.jpg");
+//   object-fit: contain;
+//   background-repeat: no-repeat;
+//   overflow: hidden;
+//   position: absolute;
+//   border-radius: 50%;
+//   width: $width;
+//   height: $width;
+//   top: $position;
+//   left: $position;
+
+//   img {
+//     position: absolute;
+//     top: -$position;
+//     left: -$position;
+//     width: 100vw;
+//   }
+// }
   }
 
   // .-efecto frosted glass
@@ -667,9 +725,25 @@ nav#navegacion {
 
   }
 
+  /*------------- Tamaño Pequeño -------------*/
   @include small-to-medium {
     padding: $space-med;
     justify-content: center;
+
+    .frosted_glass {
+
+      .fotoRaul {
+        background-image: url("../img/fotografias/fondo_inicio_900px.png");
+        background-position: 50% -320px;
+        background-size: cover;
+      }
+
+      .fondo {
+        filter: blur(0px);
+        background-size: contain;
+        background-position: 50%;
+      }
+    }
 
     .columna {
       padding: 0;
@@ -683,17 +757,26 @@ nav#navegacion {
 
   }
 
+  // .-pequeño
+
+  /*-------- Tamaño grande --------*/
+  @include extra-large() {
+    .frosted_glass .fotoRaul {
+      background-position: bottom;
+    }
+  }
 
   /* Foto Raúl */
   #foto {
+    opacity: 0;
     // padding-right: $space-xl;
     // padding-top: $space-lg;
     margin-top: $space-lg;
     margin-left: auto;
     margin-right: auto;
     text-align: right;
-    width: 128px;
-    height: 128px;
+    width: 168px;
+    height: 168px;
     // display: none;
     // visibility: none;
     // opacity: 0;
@@ -720,12 +803,6 @@ nav#navegacion {
     margin: $space-lg 0 $space-sm 0;
     // padding-top: $space-lg;
     animation: .3s 1 fadein;
-
-    svg {
-      // width: 390px;
-      // height: 160px;
-    }
-
     #colores_texto {
       fill: $primario;
       pointer-events: none;
@@ -880,11 +957,20 @@ nav#navegacion {
 
   /* Titulo Información */
   #titulo-info {
+    margin: 0;
+    max-width: 418px;
+
     font-size: 1.5rem;
     letter-spacing: .05rem;
     line-height: 2rem;
-    margin: 0;
-    max-width: 418px;
+    text-shadow: 0 0 4px rgb(241, 241, 241),
+    1px 1px 2px #ffffff;
+
+    .hiperlink {
+      font-family: "Authentic Sans 90";
+      // text-shadow: none;
+      // color: darken($primario, 30%);
+    }
 
     @include small-to-medium {
       margin: 0 auto;
@@ -900,6 +986,7 @@ nav#navegacion {
     padding: $space-med $space-sm;
     max-width: $space-xxl;
 
+    background-color: #fff;
     border: 1px solid $primario;
     border-radius: $space-sm;
     box-shadow: $sombra_carta_enfasis;
@@ -1104,7 +1191,7 @@ nav#navegacion {
     padding-bottom: 44px;
 
     background-image: url("../svg/ola_repetir.svg");
-    background-color: rgba(255, 255, 255, .8); // Para darle el cambio de color al icono detrás del subtítulo
+    // background-color: rgba(255, 255, 255, .8); // Para darle el cambio de color al icono detrás del subtítulo
     background-position: 0 .7em;
     background-size: 39px 20px;
     background-repeat: repeat-x;
@@ -1326,6 +1413,7 @@ nav#navegacion {
           box-shadow: -8px -8px 0 8px white;
           transform: translate(0, 0);
           transition: transform .2s linear;
+          z-index: 100;
         }
 
         // Ancla para hacer elemento focusable
@@ -1374,7 +1462,7 @@ nav#navegacion {
               hsl(179, 85%, 66%));
           background-size: 300% 300%;
           background-position: 0 50%;
-          z-index: -1;
+          z-index: 0;
 
           opacity: 0;
           animation: borde-colores 4s alternate infinite;

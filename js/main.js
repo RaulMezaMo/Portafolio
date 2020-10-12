@@ -280,5 +280,8 @@ $(document).ready((function () {
     disableFocus: true,
   });
   // .-micromodal
+
+  /*---------- Rellax para parallax ------------*/
+  var rellax = new Rellax('.rellax'); 
 }));
 // .-document-ready
