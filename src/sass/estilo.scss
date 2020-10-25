@@ -663,11 +663,11 @@ nav#navegacion {
       height: 100%;
       // max-width: 1400px;
 
-       background-image: url("../img/fotografias/fondo_inicio.png");
-       background-size: 100%;
-       background-repeat: no-repeat;
-       background-position: top;
-       box-shadow: inset 0 0 50px 56px #fff;
+      background-image: url("../img/fotografias/fondo_inicio.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: top;
+      box-shadow: inset 0 0 50px 56px #fff;
     }
 
     .fondo {
@@ -676,46 +676,46 @@ nav#navegacion {
       background-size: contain;
       width: 100%;
       object-fit: contain;
-      }
-// .fondo {
-//   content: "";
-//   width: 100%;
-//   height: 100%;
-//   position: absolute;
-//   top: 0;
-//   background-image: url("../img/fotografias/fondo_inicio.jpg");
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   filter: blur(30px);
-//   opacity: .4;
-//   z-index: -1;
-// }
+    }
+    // .fondo {
+    //   content: "";
+    //   width: 100%;
+    //   height: 100%;
+    //   position: absolute;
+    //   top: 0;
+    //   background-image: url("../img/fotografias/fondo_inicio.jpg");
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
+    //   filter: blur(30px);
+    //   opacity: .4;
+    //   z-index: -1;
+    // }
 
-// .fotoRaul {
-//   $width: 300px;
-//   $position: 300px;
-//   width: 100%;
-//   height: 100%;
-//   background-attachment: fixed;
-//   background-size: contain;
-//   // background-image: url("../img/fotografias/fondo_inicio.jpg");
-//   object-fit: contain;
-//   background-repeat: no-repeat;
-//   overflow: hidden;
-//   position: absolute;
-//   border-radius: 50%;
-//   width: $width;
-//   height: $width;
-//   top: $position;
-//   left: $position;
+    // .fotoRaul {
+    //   $width: 300px;
+    //   $position: 300px;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-attachment: fixed;
+    //   background-size: contain;
+    //   // background-image: url("../img/fotografias/fondo_inicio.jpg");
+    //   object-fit: contain;
+    //   background-repeat: no-repeat;
+    //   overflow: hidden;
+    //   position: absolute;
+    //   border-radius: 50%;
+    //   width: $width;
+    //   height: $width;
+    //   top: $position;
+    //   left: $position;
 
-//   img {
-//     position: absolute;
-//     top: -$position;
-//     left: -$position;
-//     width: 100vw;
-//   }
-// }
+    //   img {
+    //     position: absolute;
+    //     top: -$position;
+    //     left: -$position;
+    //     width: 100vw;
+    //   }
+    // }
   }
 
   // .-efecto frosted glass
@@ -964,7 +964,7 @@ nav#navegacion {
     letter-spacing: .05rem;
     line-height: 2rem;
     text-shadow: 0 0 4px rgb(241, 241, 241),
-    1px 1px 2px #ffffff;
+      1px 1px 2px #ffffff;
 
     .hiperlink {
       font-family: "Authentic Sans 90";
@@ -3051,6 +3051,108 @@ button {
     transition-duration: 0.001ms !important;
   }
 }
+
+/*============= Loader =============*/
+.loader {
+  content: "";
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: $i-alerta;
+
+  background-color: #fff;
+}
+
+.lds-grid {
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) scale(1.4);
+}
+
+.lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 30%;
+  background: $primario;
+  animation: lds-grid 1.2s linear infinite;
+}
+
+.lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+
+.lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+
+.lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+
+.lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+
+.lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+
+.lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+
+@keyframes lds-grid {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/*__________-- ./loader --__________*/
 
 @-webkit-keyframes moveUp {
   from {

@@ -12,6 +12,7 @@ function habilitarJs() {
 
 habilitarJs();
 
+
 // Avoid `console` errors in browsers that lack a console.
 (function () {
   var method;
@@ -40,7 +41,17 @@ habilitarJs();
 //===============================================================
 
 $(document).ready(function () {
-  console.log("--jQuery activo y document ready--");
+  // console.log("--jQuery activo y document ready--");
+
+
+  /*============ Loader ===========*/
+  $(".loader").animate({
+    top: '80px',
+    opacity: '0',
+  }, "500").hide("600");
+
+
+/*========-- ./loader =========--*/
 
   /*-------------- Navegación --------------*/
   $toggle_nav = $("#toggle-nav");
@@ -281,6 +292,6 @@ $(document).ready(function () {
   // .-micromodal
 
   /*---------- Rellax para parallax ------------*/
-  var rellax = new Rellax('.rellax'); 
+  var rellax = new Rellax('.rellax');
 });
 // .-document-ready
